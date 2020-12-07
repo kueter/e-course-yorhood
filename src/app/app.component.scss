@@ -5,5 +5,19 @@
   .first__h {
     width: 100%;
     background-color: #1e2f50;
+    .__container {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      height: 46px;
+
+      ._c1{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+      }
+    }
+
+
   }
 }
