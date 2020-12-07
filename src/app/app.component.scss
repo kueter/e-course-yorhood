@@ -12,13 +12,25 @@
       height: 46px;
       ._c1{
         display: flex;
-        width: 50%;
+        width: 30%;
+        padding-top: 10px;
         ._p1 {
-
+          display: flex;
+          width: 50%;
+           a {
+              display: block;
+              padding-right: 17px;
+              color: #fff;
+           }
+           border-right: 1px solid rgb(255, 255, 255);
         }
 
         ._p2 {
-
+          width: 50%;
+            a {
+              padding-left: 17px;
+              color: #fff;
+            }
         }
 
       }
