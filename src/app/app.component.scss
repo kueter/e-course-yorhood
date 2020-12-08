@@ -163,21 +163,20 @@
       width: 90%;
       margin-left: auto;
       margin-right: auto;
-
-      ._c1 {
-        display: flex;
-        width: 70%;
-        margin-right: auto;
-        margin-left: 35px;
-        padding-top: 25px;
-        padding-bottom: 10px;
-        justify-content: start;
-        a {
-          display: block;
-          padding-right: 17px;
-          color: #fff;
+        .c1 {
+          display: flex;
+          width: 70%;
+          margin-right: auto;
+          margin-left: 35px;
+          padding-top: 25px;
+          padding-bottom: 10px;
+          justify-content: start;
+          a {
+            display: block;
+            padding-right: 17px;
+            color: #fff;
+          }
         }
-      }
       ._c2 {
         width: 90%;
         margin-left: auto;
@@ -200,25 +199,41 @@
           color: #fff;
         }
       }
-
-      span {
-        width: 30%;
-        background: #fff;
-        height: 3px;
-        position: absolute;
-        top: 58%;
-        left: 14%;
-      }
     }
   }
 
   .s__m {
     display: none;
+    width: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+    .__container {
+      display: flex;
+      width: 100%;
+      padding: 6px;
+      justify-content: space-between;
+      ._c1 {
+        width: 20%;
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      ._c2 {
+          width: 10%;
+          color: #fff;
+          a {
+            text-align: center;
+            display: block;
+          }
+      }
+    }
   }
 }
 
-.p__A {
-}
+// .p__A {
+// }
 
 .i_p1 {
   position: absolute;
