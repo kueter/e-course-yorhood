@@ -18,19 +18,19 @@
         ._p1 {
           display: flex;
           width: 40%;
-           a {
-              display: block;
-              padding-right: 17px;
-              color: #fff;
-           }
+          a {
+            display: block;
+            padding-right: 17px;
+            color: #fff;
+          }
         }
 
         ._p2 {
           width: 50%;
-            a {
-              padding-left: 17px;
-              color: #fff;
-            }
+          a {
+            padding-left: 17px;
+            color: #fff;
+          }
         }
 
         .vh {
@@ -39,7 +39,6 @@
           width: 1px;
           margin-top: 4px;
         }
-
       }
 
       ._c3 {
@@ -50,11 +49,10 @@
         display: flex;
         width: 20%;
         a {
-            color: #fff;
+          color: #fff;
         }
         padding-top: 10px;
       }
-
     }
   }
 
@@ -97,7 +95,7 @@
           width: 100%;
           border: 1px solid #a0a1a3;
           background-color: transparent;
-          padding: .43rem 2rem;
+          padding: 0.43rem 2rem;
           font-size: 12px;
           color: #a0a1a3;
         }
@@ -106,7 +104,8 @@
           outline: none;
         }
 
-        ::placeholder ,::-ms-input-placeholder{
+        ::placeholder,
+        ::-ms-input-placeholder {
           color: #a0a1a3;
         }
 
@@ -135,13 +134,13 @@
           }
 
           a::before {
-            content: '';
+            content: "";
             position: absolute;
             width: 0px;
             height: 3px;
             background-color: #fff;
             bottom: 15%;
-            transition: width .3s ease-in-out;
+            transition: width 0.3s ease-in-out;
           }
 
           a.active::before {
@@ -162,41 +161,54 @@
     background-color: #1e2f50;
     .__container {
       width: 90%;
-      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
 
       ._c1 {
         display: flex;
         width: 70%;
         margin-right: auto;
-        margin-left: auto;
-        padding-top: 10px;
-           a {
-              display: block;
-              padding-right: 17px;
-              color: #fff;
-           }
+        margin-left: 35px;
+        padding-top: 25px;
+        padding-bottom: 10px;
+        justify-content: start;
+        a {
+          display: block;
+          padding-right: 17px;
+          color: #fff;
+        }
       }
       ._c2 {
         width: 90%;
-        margin-left: -3rem;
-        padding-top: 10px;
-        margin-bottom: 2rem;
+        margin-left: auto;
+        padding-top: 2px;
+        margin-bottom: .3rem;
         a {
           color: #fff;
         }
       }
       ._c3 {
         display: flex;
-          width: 50%;
-          margin-left: auto;
-          margin-right: auto;
-           a {
-              display: block;
-              padding-right: 17px;
-              color: #fff;
-           }
+        width: 80%;
+        padding-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+        a {
+          display: block;
+          padding-right: 17px;
+          color: #fff;
+        }
       }
 
+      span {
+        width: 30%;
+        background: #fff;
+        height: 3px;
+        position: absolute;
+        top: 58%;
+        left: 14%;
+      }
     }
   }
 
@@ -205,9 +217,7 @@
   }
 }
 
-
 .p__A {
-
 }
 
 .i_p1 {
@@ -219,14 +229,14 @@
 }
 
 @media (max-width: 600px) {
-  .first__h, .second__h {
+  .first__h,
+  .second__h {
     display: none;
     overflow: hidden;
   }
 
-  .f__m, .s__m {
-    display: block!important;
+  .f__m,
+  .s__m {
+    display: block !important;
   }
 }
-
-
