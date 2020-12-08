@@ -64,6 +64,7 @@
       width: 80%;
       margin-left: auto;
       margin-right: auto;
+
       ._c1 {
         width: 15%;
         img {
@@ -71,6 +72,7 @@
           width: 80%;
         }
       }
+
       ._c2 {
         width: 10%;
         padding-top: 10px;
@@ -115,10 +117,50 @@
           color: #a0a1a3;
         }
       }
+
+      ._c4 {
+        width: 50%;
+        padding-top: 10px;
+        ._menus {
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+          display: flex;
+          justify-content: space-between;
+          a {
+            display: block;
+            color: #fff;
+            cursor: pointer;
+            text-decoration: none;
+          }
+
+          a::before {
+            content: '';
+            position: absolute;
+            width: 0px;
+            height: 3px;
+            background-color: #fff;
+            bottom: 15%;
+            transition: width .3s ease-in-out;
+          }
+
+          a.active::before {
+            width: 10px;
+          }
+
+          a:hover:not(.active)::before {
+            width: 25px;
+          }
+        }
+      }
     }
   }
 }
 
+
+.p__A {
+
+}
 
 .i_p1 {
   position: absolute;
