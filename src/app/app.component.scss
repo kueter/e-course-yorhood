@@ -7,7 +7,7 @@
     background-color: #1e2f50;
     .__container {
       display: flex;
-      width: 70%;
+      width: 80%;
       margin-left: auto;
       margin-right: auto;
       height: 46px;
@@ -17,7 +17,7 @@
         padding-top: 10px;
         ._p1 {
           display: flex;
-          width: 50%;
+          width: 40%;
            a {
               display: block;
               padding-right: 17px;
@@ -33,6 +33,13 @@
             }
         }
 
+        .vh {
+          height: 16px;
+          background-color: #fff;
+          width: 1px;
+          margin-top: 4px;
+        }
+
       }
 
       ._c3 {
@@ -45,10 +52,18 @@
         a {
             color: #fff;
         }
+        padding-top: 10px;
       }
 
     }
 
 
+  }
+}
+
+@media (max-width: 600px) {
+  .first__h {
+    display: none;
+    overflow: hidden;
   }
 }
