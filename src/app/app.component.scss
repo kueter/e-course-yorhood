@@ -233,11 +233,31 @@
 }
 
 .p__A {
-  width: 90;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
+
+  .__c {
+    width: 50%;
+    margin-left: 1rem;
+    margin-top: 7rem;
+    span.title_1 {
+      display: block;
+      font-size: 45px;
+      font-weight: bold;
+    }
+
+    span.title_2 {
+      margin-top: 2rem;
+      display: block;
+    }
+
+
+  }
 }
+
+
 
 .i_p1 {
   position: absolute;
