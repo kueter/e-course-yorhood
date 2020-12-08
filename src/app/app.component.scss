@@ -97,15 +97,22 @@
           background-color: transparent;
           padding: .43rem 2rem;
           font-size: 12px;
-          color: #fff;
+          color: #a0a1a3;
         }
         input:focus {
           box-shadow: none;
           outline: none;
         }
 
-        ::placeholder {
-          color: #fff;
+        ::placeholder ,::-ms-input-placeholder{
+          color: #a0a1a3;
+        }
+
+        i {
+          position: absolute;
+          top: 35%;
+          left: 7%;
+          color: #a0a1a3;
         }
       }
     }
