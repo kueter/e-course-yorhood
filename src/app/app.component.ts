@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'yorhood';
+
+  topics = [
+    { name: '', img: '', course: '' },
+    { name: '', img: '', course: '' },
+    { name: '', img: '', course: '' },
+    { name: '', img: '', course: '' }
+  ];
+
 }
