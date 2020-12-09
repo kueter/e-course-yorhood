@@ -470,7 +470,7 @@
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
   .__container {
     width: 100%;
     span {
@@ -538,8 +538,54 @@
       .slide:focus {
         outline: none !important;
       }
+
+      .nav_pag {
+        margin-left: auto;
+        margin-right: auto;
+        width: 10%;
+        justify-content: space-between;
+        display: flex;
+
+      }
     }
   }
+}
+
+.p__E {
+  margin-top: 1rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.5rem;
+
+  span {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1e2f50;
+  }
+
+  .__container {
+    padding-top: 4.5rem;
+    width: 100%;
+
+    .hd_img {
+        width: 100%;
+        overflow: hidden;
+
+        img {
+          height: 250px;
+          width: 100%;
+        }
+    }
+
+    .v__e {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+
 }
 
 .i_p1 {
