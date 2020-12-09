@@ -163,7 +163,9 @@
         <div class="row">
             <div class="col-md-3" *ngFor="let item of topics">
               <div class="card my-2">
-                  <div class="card-body"></div>
+                  <div class="card-body">
+                      <img [src]="item?.img" alt="">
+                  </div>
               </div>
             </div>
         </div>
