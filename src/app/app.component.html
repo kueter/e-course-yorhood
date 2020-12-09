@@ -200,7 +200,7 @@
         <div ngxSlickItem *ngFor="let slide of slides" class="slide card m-4">
           <div class="card-body">
             <div class="_avatar">
-              <img   src="{{ slide.img }}" alt="" width="100%">
+              <img src="{{ slide.img }}" alt="" width="100%">
               <div class="h">
                 <span class="title_1">{{'Elem Mercer'}}</span><br>
                 <span class="title_2">{{'Founder Art'}}</span>
@@ -209,7 +209,8 @@
 
             <div class="qt_h">
               <i class="fas fa-quote-right float-right"></i>
-              <p class="mt-3">{{'People program enabled me to be a fuller me, using differe skills and behaviors...'}}</p>
+              <p class="mt-3">{{'People program enabled me to be a fuller me, using differe skills and behaviors...'}}
+              </p>
             </div>
           </div>
         </div>
@@ -235,40 +236,99 @@
   <span class="float-right">{{'News & Events'}}</span>
 
   <div class="__container">
-      <div class="row">
-          <div class="col-md-4">
-              <div class="card">
-                <div class="card-body p-1">
-                  <div class="hd_img">
-                    <img  src="../assets/img/_robotics.png" alt="" srcset="">
-                  </div>
-                  <div class="v__e">
-
-                  </div>
-                </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body p-1">
+            <div class="hd_img">
+              <img src="../assets/img/_robotics.png" alt="" srcset="">
+            </div>
+            <div class="v__e">
+              <div class="f__l">
+                <span class="f">{{'Robotic'}}</span>
+                <span class="s">{{'November 25th, 2020'}}</span>
               </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body p-1">
-                <div class="hd_img">
-                  <img  src="../assets/img/_teaching.png" alt="" srcset="">
-                </div>
-                <div class="v__e">
 
-                </div>
+              <div class="s__l">
+                <span>{{'Python and Three.js Course may be online'}}</span>
               </div>
+
+              <div class="t__l">
+                <p>{{'Creating software tailored to my games development gaming is a'}}</p>
+              </div>
+              <a class="btn">
+                <i class="fal fa-chevron-circle-down"></i>
+                &nbsp;
+                <small>{{'read more'}}</small>
+              </a>
+
+
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-body">
-              </div>
-            </div>
-          </div>
+        </div>
       </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body p-1">
+            <div class="hd_img">
+              <img src="../assets/img/_teaching.png" alt="" srcset="">
+            </div>
+            <div class="v__e">
+              <div class="f__l">
+                <span class="f">{{'Analytic'}}</span>
+                <span class="s">{{'December 2nd, 2020'}}</span>
+              </div>
+
+              <div class="s__l">
+                <span>{{'UML and Agile Course may be online'}}</span>
+              </div>
+
+              <div class="t__l">
+                <p>{{'Creating software tailored to my games development gaming is a'}}</p>
+              </div>
+              <a class="btn">
+                <i class="fal fa-chevron-circle-down"></i>
+                &nbsp;
+                <small>{{'read more'}}</small>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="event">
+          <div class="__item" *ngFor="let item of [].constructor(4)">
+            <div class="_dat">
+              <span>{{'Nov'}}</span>
+              <h3>{{'23'}}</h3>
+            </div>
+            <div class="_body">
+              <span><a>{{'Music & Arts'}}</a></span>
+              <h4><a>{{'Tackling the climate crisis worldwide'}}</a></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 </div>
 
+
+<!-- End Banner Part E -->
+
+<div class="footer">
+  <div class="__container">
+    <div class="_nl_t">
+      <div class="card"></div>
+    </div>
+  </div>
+  <div class="_c_rf">
+  </div>
+
+</div>
+
+
+<!-- banner bg -->
 <img class="i_p1" src="../assets/img/bg.png" alt="">
