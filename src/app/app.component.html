@@ -95,7 +95,7 @@
     </div>
 </div>
 
-<!-- End Banner Part -->
+<!-- End Banner Part_A -->
 
 <div class="p__B">
     <div class="row">
@@ -157,14 +157,17 @@
     </div>
 </div>
 
+<!-- End Banner Part_B -->
 <div class="p__C">
     <span class="float-right">{{'Popular Subjects'}}</span>
     <div class="__c1">
         <div class="row">
-            <div class="col-md-3" *ngFor="let item of topics">
+            <div class="col-md-2" *ngFor="let item of topics">
               <div class="card my-2">
-                  <div class="card-body">
-                      <img [src]="item?.img" alt="">
+                  <div class="card-body p-2 text-center">
+                      <img [src]="item?.img" alt=""><br>
+                      <small class="mt-2">{{item?.name}}</small><br>
+                      <small class="mt-2">{{item?.course}}</small>
                   </div>
               </div>
             </div>
@@ -181,6 +184,12 @@
 
 </div>
 
+<!-- End Banner Part C -->
 
+<div class="p__D">
+    <div class="__container">
+          <span class="title">{{'Student\'s Advices '}}</span>
+    </div>
+</div>
 
 <img class="i_p1" src="../assets/img/bg.png" alt="">
