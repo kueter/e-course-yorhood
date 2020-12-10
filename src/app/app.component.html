@@ -200,10 +200,10 @@
         <div ngxSlickItem *ngFor="let slide of slides; let i = index" class="slide card m-4">
           <div class="card-body">
             <div class="_avatar">
-              <img src="{{ slide.img }}" alt="" width="100%">
+              <img [src]="slide?.img" alt="" width="100%">
               <div class="h">
-                <span class="title_1">{{'Elem Mercer'}}</span><br>
-                <span class="title_2">{{'Founder Art'}}</span>
+                <span class="title_1">{{slide?.user}}</span><br>
+                <span class="title_2">{{slide?.grade}}</span>
               </div>
             </div>
             <div class="qt_h">

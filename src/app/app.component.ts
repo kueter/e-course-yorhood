@@ -20,10 +20,10 @@ export class AppComponent {
   ];
 
   slides = [
-    {user:'Gustave', img: "../assets/img/AF4.png", grade: 'Ingenieur Telecom'},
-    {user:'Roland', img: "../assets/img/AF3.png", grade: 'Founder ATI corp'},
-    {user:'Nadege', img: "../assets/img/AM4.png", grade: 'Devops chez ATOS'},
-    {user:'Ralph', img: "../assets/img/AF7.png", grade: 'Instructor Cisco'}
+    {user:'Gustave', img: "../assets/img/AM1.png", grade: 'Ingenieur Telecom'},
+    {user:'Roland', img: "../assets/img/AM3.png", grade: 'Founder ATI corp'},
+    {user:'Nadege', img: "../assets/img/AF4.png", grade: 'Devops chez ATOS'},
+    {user:'Ralph', img: "../assets/img/AM2.png", grade: 'Instructor Cisco'}
   ];
 
   slideConfig = {"slidesToShow": 3, "slidesToScroll": 3};
