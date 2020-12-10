@@ -50,6 +50,7 @@
         width: 20%;
         a {
           color: #fff;
+          cursor: pointer;
         }
         padding-top: 10px;
       }
@@ -81,6 +82,7 @@
           padding: 5px;
           background-color: #46957b;
           color: #fff;
+          cursor: pointer;
           small {
             margin-left: 5px;
           }
@@ -197,6 +199,7 @@
           display: block;
           padding-right: 17px;
           color: #fff;
+          cursor: pointer;
         }
       }
     }
@@ -228,6 +231,28 @@
           display: block;
         }
       }
+    }
+  }
+}
+
+
+.modal {
+
+  ._container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+
+    ._stick {
+      width: 30%;
+      background-color: #1e2f50;
+      height: 440px;
+    }
+
+    ._viewf {
+      width: 70%;
+      height: 440px;
     }
   }
 }
