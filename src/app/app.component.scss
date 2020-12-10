@@ -248,11 +248,14 @@
       width: 30%;
       background-color: #1e2f50;
       height: 440px;
+      z-index: 3;
     }
 
     ._viewf {
       width: 70%;
       height: 440px;
+      z-index: 1;
+      padding: 2rem;
     }
   }
 }

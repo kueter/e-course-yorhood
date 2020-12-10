@@ -16,6 +16,17 @@ import { Component } from '@angular/core';
           style({ transform: 'translateX(0%)'})
         ])))
       ]),
+
+      trigger('x-y0', [
+        state('right', style({  transform: 'translateX(0%)'})),
+        state('left', style({ transform: 'translateX(-42%)'})),
+        transition('right => left', animate('1s ease-in-out', keyframes([
+          style({ transform: 'translateX(-42%)'})
+        ]))),
+        transition('left => right', animate('1s ease-in-out', keyframes([
+          style({ transform: 'translateX(0%)'})
+        ])))
+      ]),
       trigger(
         'inOutAnimation',[
           transition(':enter',[

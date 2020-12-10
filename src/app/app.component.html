@@ -84,9 +84,12 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
         <div class="_container">
-            <div class="_stick" [@x-x0]="state === false ? 'left': 'right'"></div>
-            <div class="_viewf">
+            <div class="_stick" [@x-x0]="state === false ? 'left': 'right'">
 
+                <button (click)="switchTo()">A</button>
+            </div>
+            <div class="_viewf" [@x-y0]="state === false ? 'right': 'left'">
+                <app-auth [_c]="state"></app-auth>
             </div>
         </div>
     </div>

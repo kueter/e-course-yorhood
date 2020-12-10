@@ -1,0 +1,45 @@
+<div *ngIf="_c === false" [@inOutAnimation] class="row">
+  <div class="col-md-9 mx-auto">
+    <form [formGroup]="AuthForm">
+      <!-- <div class="field">
+        <small class="dcolor" *ngIf="(name.statusChanges|async) === 'INVALID'">{{'Name is invalid'}}</small>
+        <small  class="vcolor" *ngIf="(name.statusChanges|async) === 'VALID'">{{'Valid Enter'}}</small>
+        <input type="text" id="name" formControlName="name" placeholder="Edward Koss" [ngClass]="{'bvcolor': (name.statusChanges|async) === 'VALID', 'bdcolor': (name.statusChanges|async) === 'INVALID'}">
+        <label for="name"><i class="far fa-user mr-2"></i>{{'Name'}}</label>
+      </div> -->
+      <div class="field">
+        <small class="dcolor" *ngIf="(email.statusChanges|async) === 'INVALID'">{{'Email is invalid'}}</small>
+        <small class="vcolor"  *ngIf="(email.statusChanges|async) === 'VALID'">{{'Valid Enter'}}</small>
+        <input type="text" id="email" formControlName="email" [ngClass]="{'bvcolor': (email.statusChanges|async) === 'VALID', 'bdcolor': (email.statusChanges|async) === 'INVALID'}" placeholder="Ek@example.com">
+        <label for="email"><i class="far fa-envelope mr-2"></i>{{'Email'}}</label>
+      </div>
+      <div class="field">
+        <small class="dcolor" *ngIf="(password.statusChanges|async) === 'INVALID'">{{'Password is invalid'}}</small>
+        <small class="vcolor"  *ngIf="(password.statusChanges|async) === 'VALID'">{{'Valid Enter'}}</small>
+        <input type="text" id="password" formControlName="password" [ngClass]="{'bvcolor': (password.statusChanges|async) === 'VALID', 'bdcolor': (password.statusChanges|async) === 'INVALID'}" placeholder="********">
+        <label for="password"><i class="far fa-envelope mr-2"></i>{{'Password'}}</label>
+      </div>
+      <!-- <div class="field">
+        <small class="dcolor" *ngIf="(message.statusChanges|async) === 'INVALID'">{{'Message is invalid'}}</small>
+        <small  class="vcolor" *ngIf="(message.statusChanges|async) === 'VALID'">{{'Valid Enter'}}</small>
+        <textarea cols="40" rows="5" id="message" formControlName="message"
+          placeholder="Put your Message Here not less 150 words" [ngClass]="{'bvcolor': (message.statusChanges|async) === 'VALID', 'bdcolor': (message.statusChanges|async) === 'INVALID'}"></textarea>
+        <label for="message"><i class="far fa-paragraph mr-2"></i>{{'Message'}}</label>
+      </div> -->
+
+      <div class="actions mt-3">
+        <button class="btn" [disabled]="AuthForm?.invalid" (click)="login()">
+          <span *ngIf="spin === true" class="mr-2"><i class="fas fa-spinner fa-spin"></i></span>
+          <small><b>{{'Send mail'}}</b></small>
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<div *ngIf="_c === true" [@inOutAnimation] class="row">
+  <div class="col-md-12 text-center">
+      Empty now
+  </div>
+</div>
