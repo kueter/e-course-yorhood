@@ -20,17 +20,14 @@ export class AppComponent {
   ];
 
   slides = [
-    {img: "http://placehold.it/350x150/000000"},
-    {img: "http://placehold.it/350x150/111111"},
-    {img: "http://placehold.it/350x150/333333"},
-    {img: "http://placehold.it/350x150/666666"}
+    {user:'Gustave', img: "../assets/img/AF4.png", grade: 'Ingenieur Telecom'},
+    {user:'Roland', img: "../assets/img/AF3.png", grade: 'Founder ATI corp'},
+    {user:'Nadege', img: "../assets/img/AM4.png", grade: 'Devops chez ATOS'},
+    {user:'Ralph', img: "../assets/img/AF7.png", grade: 'Instructor Cisco'}
   ];
 
   slideConfig = {"slidesToShow": 3, "slidesToScroll": 3};
 
-  addSlide() {
-    this.slides.push({img: "http://placehold.it/350x150/777777"})
-  }
 
   removeSlide() {
     this.slides.length = this.slides.length - 1;
