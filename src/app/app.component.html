@@ -197,7 +197,7 @@
       <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
         (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
         (beforeChange)="beforeChange($event)">
-        <div ngxSlickItem *ngFor="let slide of slides" class="slide card m-4">
+        <div ngxSlickItem *ngFor="let slide of slides; let i = index" class="slide card m-4">
           <div class="card-body">
             <div class="_avatar">
               <img src="{{ slide.img }}" alt="" width="100%">
@@ -206,7 +206,6 @@
                 <span class="title_2">{{'Founder Art'}}</span>
               </div>
             </div>
-
             <div class="qt_h">
               <i class="fas fa-quote-right float-right"></i>
               <p class="mt-3">{{'People program enabled me to be a fuller me, using differe skills and behaviors...'}}
