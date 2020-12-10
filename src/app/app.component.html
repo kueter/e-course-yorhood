@@ -170,7 +170,7 @@
           <div class="card-body p-2 text-center">
             <img [src]="item?.img" alt=""><br>
             <small class="mt-2">{{item?.name}}</small><br>
-            <small class="mt-2">{{item?.course}}</small>
+            <small class="mt-2">{{item?.course + ' courses'}} </small>
           </div>
         </div>
       </div>
@@ -216,9 +216,9 @@
       </ngx-slick-carousel>
 
       <div class="nav_pag">
-        <button class="btn"><i class="fal fa-circle"></i></button>
-        <button class="btn"><i class="fal fa-circle"></i></button>
-        <button class="btn"><i class="fal fa-circle"></i></button>
+        <button class="btn" (click)="slickModal.slickGoTo(1)"><i class="fal fa-circle"></i></button>
+        <!-- <button class="btn"><i class="fal fa-circle"></i></button> -->
+        <button class="btn" (click)="slickModal.slickGoTo(4)"><i class="fal fa-circle"></i></button>
       </div>
 
       <!-- <button (click)="addSlide()">Add</button>
