@@ -1,0 +1,233 @@
+.header {
+  width: 100%;
+  position: relative;
+
+  .first__h {
+    width: 100%;
+    background-color: #1e2f50;
+    .__container {
+      display: flex;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      height: 46px;
+      ._c1 {
+        display: flex;
+        width: 30%;
+        padding-top: 10px;
+        ._p1 {
+          display: flex;
+          width: 40%;
+          a {
+            display: block;
+            padding-right: 17px;
+            color: #fff;
+          }
+        }
+
+        ._p2 {
+          width: 50%;
+          a {
+            padding-left: 17px;
+            color: #fff;
+          }
+        }
+
+        .vh {
+          height: 16px;
+          background-color: #fff;
+          width: 1px;
+          margin-top: 4px;
+        }
+      }
+
+      ._c3 {
+        width: 50%;
+      }
+
+      ._c2 {
+        display: flex;
+        width: 20%;
+        a {
+          color: #fff;
+        }
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .second__h {
+    .__container {
+      display: flex;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+
+      ._c1 {
+        width: 15%;
+        img {
+          text-align: center;
+          width: 80%;
+        }
+      }
+
+      ._c2 {
+        width: 10%;
+        padding-top: 10px;
+        a {
+          width: 90%;
+          text-align: center;
+          display: block;
+          padding: 5px;
+          background-color: #46957b;
+          color: #fff;
+          small {
+            margin-left: 5px;
+          }
+        }
+      }
+
+      ._c3 {
+        width: 25%;
+        padding: 10px;
+        position: relative;
+        input {
+          width: 100%;
+          border: 1px solid #a0a1a3;
+          background-color: transparent;
+          padding: 0.43rem 2rem;
+          font-size: 12px;
+          color: #a0a1a3;
+        }
+        input:focus {
+          box-shadow: none;
+          outline: none;
+        }
+
+        ::placeholder,
+        ::-ms-input-placeholder {
+          color: #a0a1a3;
+        }
+
+        i {
+          position: absolute;
+          top: 35%;
+          left: 7%;
+          color: #a0a1a3;
+        }
+      }
+
+      ._c4 {
+        width: 50%;
+        padding-top: 10px;
+        ._menus {
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+          display: flex;
+          justify-content: space-between;
+          a {
+            display: block;
+            color: #fff;
+            cursor: pointer;
+            text-decoration: none;
+          }
+
+          a::before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 3px;
+            background-color: #fff;
+            bottom: 15%;
+            transition: width 0.3s ease-in-out;
+          }
+
+          a.active::before {
+            width: 10px;
+          }
+
+          a:hover:not(.active)::before {
+            width: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  .f__m {
+    display: none;
+    width: 100%;
+    background-color: #1e2f50;
+    .__container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      ._c1 {
+        display: flex;
+        width: 70%;
+        margin-right: auto;
+        margin-left: 35px;
+        padding-top: 25px;
+        padding-bottom: 10px;
+        justify-content: flex-start;
+        a {
+          display: block;
+          padding-right: 17px;
+          color: #fff;
+        }
+      }
+      ._c2 {
+        width: 90%;
+        margin-left: auto;
+        padding-top: 2px;
+        margin-bottom: 0.3rem;
+        a {
+          color: #fff;
+        }
+      }
+      ._c3 {
+        display: flex;
+        width: 80%;
+        padding-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+        a {
+          display: block;
+          padding-right: 17px;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .s__m {
+    display: none;
+    width: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+    .__container {
+      display: flex;
+      width: 100%;
+      padding: 6px;
+      justify-content: space-between;
+      ._c1 {
+        width: 20%;
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      ._c2 {
+        width: 10%;
+        color: #fff;
+        a {
+          text-align: center;
+          display: block;
+        }
+      }
+    }
+  }
+}
