@@ -10,13 +10,15 @@ import { HomeComponent } from './home/home.component';
 import { AuthComponent } from './auth/auth.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CoursesComponent } from './courses/courses.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AuthComponent,
-    CoursesComponent
+    CoursesComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
