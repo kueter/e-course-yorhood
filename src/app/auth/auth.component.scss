@@ -89,7 +89,7 @@ input:focus + label {
 }
 
 .actions .btn {
-  background-color: #008080;
+  background-color: #46957b;
   color: #fff;
   width: 50%;
   cursor: pointer;
@@ -119,7 +119,7 @@ input:focus + label {
 }
 
 .vcolor {
-  color: #008080;
+  color: #46957b;
   position: absolute;
   top: 2%;
   right: 3%;
@@ -133,7 +133,7 @@ input:focus + label {
 }
 
 .bvcolor {
-  border-color: #008080!important;
+  border-color: #46957b!important;
 }
 
 .bdcolor {
@@ -166,8 +166,8 @@ input:focus + label {
   img {
     width: 80px;
     height: 80px;
-    border-radius: 50%;
-    border: 3px solid #8e9194;
+    border-radius: .5rem;
+    border: 3px solid #46957b;
   }
 }
 
