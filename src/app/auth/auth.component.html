@@ -22,13 +22,13 @@
         <small class="dcolor" *ngIf="(email.statusChanges|async) === 'INVALID'">{{'Email is invalid'}}</small>
         <small class="vcolor"  *ngIf="(email.statusChanges|async) === 'VALID'">{{'Valid Enter'}}</small>
         <input type="text" id="email" formControlName="email" [ngClass]="{'bvcolor': (email.statusChanges|async) === 'VALID', 'bdcolor': (email.statusChanges|async) === 'INVALID'}" placeholder="Ek@example.com">
-        <label for="email"><i class="far fa-envelope mr-2"></i>{{'Email'}}</label>
+        <label for="email"><i class="fal fa-envelope mr-2"></i>{{'Email'}}</label>
       </div>
       <div class="field">
         <small class="dcolor" *ngIf="(password.statusChanges|async) === 'INVALID'">{{'Password is invalid'}}</small>
         <small class="vcolor"  *ngIf="(password.statusChanges|async) === 'VALID'">{{'Valid Enter'}}</small>
-        <input type="text" id="password" formControlName="password" [ngClass]="{'bvcolor': (password.statusChanges|async) === 'VALID', 'bdcolor': (password.statusChanges|async) === 'INVALID'}" placeholder="********">
-        <label for="password"><i class="far fa-envelope mr-2"></i>{{'Password'}}</label>
+        <input type="password" id="password" formControlName="password" [ngClass]="{'bvcolor': (password.statusChanges|async) === 'VALID', 'bdcolor': (password.statusChanges|async) === 'INVALID'}" placeholder="********">
+        <label for="password"><i class="fal fa-lock mr-2"></i>{{'Password'}}</label>
       </div>
       <!-- <div class="field">
         <small class="dcolor" *ngIf="(message.statusChanges|async) === 'INVALID'">{{'Message is invalid'}}</small>
@@ -44,6 +44,11 @@
           <small><b>{{'Login'}}</b></small>
         </button>
       </div>
+
+      <div class="sw-to_other">
+          <span>{{'Have not yet an account ? '}} <a><small>{{' Here'}}</small></a></span>
+      </div>
+
     </form>
   </div>
 </div>
