@@ -159,6 +159,14 @@
     }
   }
 
+  .fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background: #2b646f;
+  }
+
   .f__m {
     display: none;
     width: 100%;

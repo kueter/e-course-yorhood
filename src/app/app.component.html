@@ -20,7 +20,7 @@
       </div>
     </div>
   </div>
-  <div class="second__h">
+  <div class="second__h" [ngClass]="{'fixed': fixed === true , '': fixed === false}">
     <div class="__container">
       <div class="_c1">
         <img src="../assets/img/logo.png" alt="">
@@ -38,7 +38,6 @@
         <div class="_menus">
           <a routerLink="/home" routerLinkActive="active"><small>{{'Home'}}</small></a>
           <a routerLink="/courses" routerLinkActive="active"><small>{{'Courses'}}</small></a>
-          <a routerLink="/projects" routerLinkActive="active"><small>{{'Projects'}}</small></a>
           <a routerLink="/blog" routerLinkActive="active"><small>{{'Blog'}}</small></a>
           <a routerLink="/contact" routerLinkActive="active"><small>{{'Contact'}}</small></a>
           <a routerLink="/about" routerLinkActive="active"><small>{{'About'}}</small></a>
@@ -93,9 +92,6 @@
     </div>
   </div>
 </div>
-
-
-
 
 
 <router-outlet></router-outlet>

@@ -1,5 +1,5 @@
 import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -33,10 +33,23 @@ export class AppComponent {
   title = 'yorhood';
 
   state = false;
+  fixed = false;
 
   getStmt(event) {
     this.state = event;
     console.log(this.state);
+  }
+
+
+  @HostListener('window:scroll', [])
+  onScroll() {
+    if(document.documentElement.scrollTop >= 47) {
+        this.fixed = true;
+    }
+
+    if(document.documentElement.scrollTop < 47 ) {
+        this.fixed = false;
+    }
   }
 
 
