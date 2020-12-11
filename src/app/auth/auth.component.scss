@@ -83,11 +83,15 @@ input:focus + label {
   cursor: pointer;
 }
 
+.actions {
+  width: 100%;
+  text-align: center!important;
+}
 
 .actions .btn {
   background-color: #008080;
   color: #fff;
-  float: right;
+  width: 50%;
 }
 
 .actions .btn .fa-spinner {
@@ -138,8 +142,6 @@ input:focus + label {
 
 
 
-
-
 .h__ {
   width: 100%;
   text-align: center;
@@ -161,9 +163,9 @@ input:focus + label {
   width: 100%;
   text-align: center;
   img {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    border: 2px solid #4d4f52;
+    border: 3px solid #8e9194;
   }
 }
