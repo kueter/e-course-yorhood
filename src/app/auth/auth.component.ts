@@ -1,10 +1,23 @@
+import { trigger, transition, style, animate } from '@angular/animations';
 import { Component, Input, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-auth',
   templateUrl: './auth.component.html',
-  styleUrls: ['./auth.component.scss']
+  styleUrls: ['./auth.component.scss'],
+  animations: [
+    trigger(
+      'inOutAnimation',[
+        transition(':enter',[
+            style({ height: 0, opacity: 0 }), animate('.1s ease-out',style({ opacity: 1 }))
+        ]),
+        transition(':leave',[
+            style({ opacity: 1 }), animate('.1s ease-in', style({ height: 0, opacity: 0 }))
+        ])
+      ]
+    )
+  ]
 })
 export class AuthComponent implements OnInit {
 

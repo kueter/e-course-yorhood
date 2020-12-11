@@ -26,17 +26,7 @@ import { Component } from '@angular/core';
         transition('left => right', animate('1s ease-in-out', keyframes([
           style({ transform: 'translateX(0%)'})
         ])))
-      ]),
-      trigger(
-        'inOutAnimation',[
-          transition(':enter',[
-              style({ height: 0, opacity: 0 }), animate('.6s ease-out',style({ opacity: 1 }))
-          ]),
-          transition(':leave',[
-              style({ opacity: 1 }), animate('.3s ease-in', style({ height: 0, opacity: 0 }))
-          ])
-        ]
-      )
+      ])
   ]
 })
 export class AppComponent {

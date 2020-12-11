@@ -134,3 +134,36 @@ input:focus + label {
 .bdcolor {
     border-color:  brown!important;
 }
+
+
+
+
+
+
+.h__ {
+  width: 100%;
+  text-align: center;
+  span.ti {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4d4f52;
+  }
+
+  span.itd {
+    font-size: 12px;
+    font-weight: bold;
+    color: #4d4f52;
+  }
+}
+
+
+.h_p {
+  width: 100%;
+  text-align: center;
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #4d4f52;
+  }
+}
