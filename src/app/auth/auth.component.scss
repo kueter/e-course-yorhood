@@ -92,6 +92,7 @@ input:focus + label {
   background-color: #008080;
   color: #fff;
   width: 50%;
+  cursor: pointer;
 }
 
 .actions .btn .fa-spinner {
@@ -181,5 +182,10 @@ input:focus + label {
       font-size: 12px;
       font-weight: bold;
       color: #4d4f52;
+
+      a {
+        cursor: pointer;
+        color: #46957b;
+      }
   }
 }

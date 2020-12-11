@@ -32,10 +32,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'yorhood';
 
-  state = false;
+  state;
 
-  switchTo() {
-    this.state = !this.state;
+  getStmt(event) {
+    this.state = event;
   }
 
 
