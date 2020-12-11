@@ -79,28 +79,14 @@
 <!-- End Header -->
 
 
-
-
-
-<div class="modal fade connex_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-        <div class="_container">
-            <div class="_stick" [@x-x0]="state === false ? 'left': 'right'">
-            </div>
-            <div class="_viewf" [@x-y0]="state === false ? 'right': 'left'">
-                <app-auth (state)="getStmt($event)"></app-auth>
-            </div>
-        </div>
-    </div>
-  </div>
-</div>
-
-
+<!-- Body -->
 <router-outlet></router-outlet>
 
+<!-- body -->
 
-<!-- End Banner Part E -->
+
+
+<!-- Footer -->
 
 <div class="footer">
   <div class="__container">
@@ -195,5 +181,22 @@
 </div>
 
 
+
 <!-- banner bg -->
 <img class="i_p1" src="../assets/img/bg.png" alt="">
+
+
+
+<div class="modal fade connex_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="_container">
+            <div class="_stick" [@x-x0]="state === false ? 'left': 'right'">
+            </div>
+            <div class="_viewf" [@x-y0]="state === false ? 'right': 'left'">
+                <app-auth (state)="getStmt($event)"></app-auth>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
