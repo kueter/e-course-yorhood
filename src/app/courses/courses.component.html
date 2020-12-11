@@ -1,11 +1,26 @@
 <div class="row mt-5" style="height: 550px;">
       <div class="col-md-11 mx-auto">
           <div class="_he">
-              <input type="text">
-              <button>{{''}}</button>
+            <div class="sfm">
+              <input type="text" placeholder="search here">
+              <i class="fal fa-search"></i>
+            </div>
+              <button><i class="fal fa-th"></i></button>
               <select>
-                <option *ngFor="let item of topics"></option>
+                <option *ngFor="let item of topics">
+                  {{item?.name}}
+                </option>
               </select>
+          </div>
+
+          <div class="_container">
+              <div class="row">
+                    <div class="col-md-4">
+                      <div class="card">
+                          <div class="card-body"></div>
+                      </div>
+                    </div>
+              </div>
           </div>
       </div>
 </div>

@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoursesComponent implements OnInit {
 
-  topics = [];
+  topics = [
+    {name: 'test'},
+    {name: 'test'},
+    {name: 'test'}
+  ];
 
   constructor() { }
 

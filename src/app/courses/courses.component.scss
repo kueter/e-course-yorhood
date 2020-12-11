@@ -1,5 +1,64 @@
 ._he {
   width: 50%;
   margin-left: auto;
-  height: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  .sfm {
+    width: 60%;
+    position: relative;
+    input {
+      width: 95%;
+      outline: none;
+      border: none;
+      border-radius: .2rem;
+      background-color: white;
+      padding: .35rem 2rem;
+      color: #7f8183;
+    }
+
+    i {
+      position: absolute;
+      left: 3%;
+      top: 30%;
+      color: #7f8183;
+    }
+  }
+
+
+  select {
+    width: 25%;
+    outline: none;
+    border: none;
+    border-radius: .2rem;
+    background-color: white;
+    padding: .35rem .75rem;
+    -moz-appearance: none;
+     -webkit-appearance: none;
+     color: #7f8183;
+  }
+
+
+
+  button {
+    width: 6%;
+    outline: none;
+    background-color: white;
+    padding: 2px;
+    border: none;
+    border-radius: .2rem;
+
+
+    i {
+      display: block;
+      color: #7f8183;
+    }
+  }
+
+
+}
+
+._container {
+  width: 100%;
+
 }
