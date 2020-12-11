@@ -1,4 +1,4 @@
-<div *ngIf="_c === false"  class="row">
+<div *ngIf="_s === true"  class="row">
   <div class="col-md-9 mx-auto">
     <form [formGroup]="AuthForm">
 
@@ -46,15 +46,16 @@
       </div>
 
       <div class="sw-to_other">
-          <span>{{'Have not yet an account ? '}} <a><small>{{' Here'}}</small></a></span>
+          <span>{{'Have not yet an account ? '}} <a (click)="switchTo()"><small>{{' Here'}}</small></a></span>
       </div>
 
     </form>
   </div>
 </div>
 
-<div *ngIf="_c === true" class="row">
+<div *ngIf="_s === false" class="row">
   <div class="col-md-12 text-center">
       Empty now
+      <a (click)="switchTo()"><small>{{'Here'}}</small></a>
   </div>
 </div>

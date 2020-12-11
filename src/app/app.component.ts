@@ -32,10 +32,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'yorhood';
 
-  state;
+  state = false;
 
   getStmt(event) {
     this.state = event;
+    console.log(this.state);
   }
 
 
