@@ -1,5 +1,5 @@
 import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -29,13 +29,21 @@ import { Component, HostListener } from '@angular/core';
       ])
   ]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+
   title = 'yorhood';
 
   boot = false;
 
   state = false;
   fixed = false;
+
+
+  ngOnInit(): void {
+       setTimeout(() => {
+        this.boot = true;
+    }, 1500);
+  }
 
   getStmt(event) {
     this.state = event;

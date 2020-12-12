@@ -11,6 +11,7 @@ import { AuthComponent } from './auth/auth.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CoursesComponent } from './courses/courses.component';
 import { BlogComponent } from './blog/blog.component';
+import { LoadingComponent } from './loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BlogComponent } from './blog/blog.component';
     HomeComponent,
     AuthComponent,
     CoursesComponent,
-    BlogComponent
+    BlogComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
