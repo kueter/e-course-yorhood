@@ -22,6 +22,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class AuthComponent implements OnInit {
 
   AuthForm: FormGroup;
+  RegForm: FormGroup;
 
   @Output() state = new EventEmitter();
 
@@ -45,6 +46,21 @@ export class AuthComponent implements OnInit {
       ]),
       password: new FormControl('', [Validators.required])
     });
+
+    this.RegForm = new FormGroup({
+      name: new FormControl('', [Validators.required]),
+      email: new FormControl('', [
+        Validators.required,
+        Validators.pattern(
+          '[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}'
+        ),
+      ]),
+      password: new FormControl('', [Validators.required])
+    })
+  }
+
+  get name() {
+    return this.RegForm.get('name');
   }
 
   get password() {
@@ -54,6 +70,8 @@ export class AuthComponent implements OnInit {
   get email() {
     return this.AuthForm.get('email');
   }
+
+
 
   login() {
     this.spin = true;
