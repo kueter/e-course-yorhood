@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-courses',
@@ -51,10 +52,25 @@ export class CoursesComponent implements OnInit {
   ];
 
   p: number = 1;
+  shoppingCartItems: any[];
 
-  constructor() { }
+  constructor(private service: AppService) { }
 
   ngOnInit(): void {
+    this.service.getItems().subscribe(_ => this.shoppingCartItems = _);
+  }
+
+
+  addCart(item: any) {
+    const distinct = this.shoppingCartItems.filter((e) => e._id === item._id);
+
+    if (distinct.length === 0) {
+      this.service.addToCart(item);
+      // this.notifier.notify('info', 'This Product is added');
+    }
+    if (distinct.length > 0) {
+      // this.notifier.notify('info', 'This Product is already added');
+    }
   }
 
 }

@@ -14,6 +14,7 @@ import { BlogComponent } from './blog/blog.component';
 import { LoadingComponent } from './loading/loading.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { MFilterPipe } from './m-filter.pipe';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MFilterPipe } from './m-filter.pipe';
     CoursesComponent,
     BlogComponent,
     LoadingComponent,
-    MFilterPipe
+    MFilterPipe,
+    CartComponent
   ],
   imports: [
     BrowserModule,
