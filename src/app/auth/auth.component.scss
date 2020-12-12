@@ -195,10 +195,22 @@ input:focus + label {
   width: 100%;
   display: flex;
   padding-top: .4rem;
-
+  justify-content: space-between;
   a {
     width: 30%;
     display: block;
     text-align: center;
+
+    .fa-facebook {
+      color: #4267B2;
+    }
+
+    .fa-linkedin {
+      color: #3178B5;
+    }
+
+    .fa-google-plus {
+      color: #DB4437;
+    }
   }
 }
