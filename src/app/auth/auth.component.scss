@@ -189,3 +189,16 @@ input:focus + label {
       }
   }
 }
+
+
+.social_reg {
+  width: 100%;
+  display: flex;
+  padding-top: .4rem;
+
+  a {
+    width: 30%;
+    display: block;
+    text-align: center;
+  }
+}
