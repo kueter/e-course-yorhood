@@ -13,6 +13,7 @@ import { CoursesComponent } from './courses/courses.component';
 import { BlogComponent } from './blog/blog.component';
 import { LoadingComponent } from './loading/loading.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { MFilterPipe } from './m-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     AuthComponent,
     CoursesComponent,
     BlogComponent,
-    LoadingComponent
+    LoadingComponent,
+    MFilterPipe
   ],
   imports: [
     BrowserModule,
