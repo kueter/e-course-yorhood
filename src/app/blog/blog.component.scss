@@ -6,6 +6,14 @@
       height: 400px;
     }
   }
+
+  .card-footer {
+    .fl {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
 
 
