@@ -64,12 +64,17 @@ export class AppComponent implements OnInit {
     }
   }
 
-  basket() {
+  opbasket() {
     $(".basket").fadeIn()
       .css({ top: 0, position: 'fixed' })
-      .animate({ height: '600px' }, 800, function () {
-        //callback
-      });
+      .animate({ height: '600px' }, 800);
   }
+
+  clbasket() {
+    $(".basket").fadeIn()
+    .css({ top: 0, position: 'fixed' })
+    .animate({ height: '600px' }, 800);
+  }
+
 
 }

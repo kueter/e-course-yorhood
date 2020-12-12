@@ -311,9 +311,10 @@
 
 .basket {
   width: 100%;
-  background-color: black;
-  opacity: .5;
+  background-color: #fff;
+  opacity: .9;
   height: 0px;
+  z-index: 200;
 }
 
 
