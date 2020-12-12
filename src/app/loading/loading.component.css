@@ -1,3 +1,11 @@
+.cp_load {
+  width: 100%;
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
 .contain {
   position: absolute;
   top: 50%;
@@ -12,7 +20,7 @@
 }
 
 .element-clip {
-  background-color: brown;
+  background-color: #2b646f;
   color: #fff;
   height: inherit;
   animation: anima-clip 1s infinite alternate;

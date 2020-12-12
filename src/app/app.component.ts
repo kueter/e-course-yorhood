@@ -40,9 +40,9 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit(): void {
-       setTimeout(() => {
-        this.boot = true;
-    }, 1500);
+    //    setTimeout(() => {
+    //     this.boot = true;
+    // }, 1500);
   }
 
   getStmt(event: any) {
