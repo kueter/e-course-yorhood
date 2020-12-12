@@ -1,5 +1,10 @@
 
 .card {
+
+  .card-header {
+    background-color: #fff;
+  }
+
   .card-body {
     img {
       width: 100%;
@@ -64,7 +69,29 @@
 
 
 
+.f-input {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  i {
+   color: #fff;
+  }
 
+  input {
+    width: 85%;
+    outline: none;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 2px solid #494a4b;
+    border-radius: .25rem;
+    color: #494a4b;
+  }
+
+  button {
+    background-color: #46957b;
+  }
+}
 
 
 
