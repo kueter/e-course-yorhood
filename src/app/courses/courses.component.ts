@@ -20,7 +20,7 @@ export class CoursesComponent implements OnInit {
   ];
 
   courses = [
-    { name: 'Angular 9 Bootcamp 2020', instructor: 'David Beckam', description: '', cost: '250', uptime: '2020-06-03', mark: 3, status: 'Available', remise: '', preload: '../../assets/img/preload.png', category: this.topics[0].name}
+    { name: 'Angular 9 Bootcamp 2020', instructor: 'David Beckam', lesson: 12, joined: 10, cost: '250', uptime: '2020-06-03', mark: 3, status: 'Available', remise: '', preload: '../../assets/img/preload.png', category: this.topics[0].name}
   ];
 
   constructor() { }

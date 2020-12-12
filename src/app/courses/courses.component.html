@@ -1,30 +1,61 @@
 <div class="row mt-5" style="height: 550px;">
-      <div class="col-md-11 mx-auto">
-          <div class="_he">
-            <div class="sfm">
-              <input type="text" placeholder="search here">
-              <i class="fal fa-search"></i>
-            </div>
-              <button><i class="fal fa-th"></i></button>
-              <select>
-                <option *ngFor="let item of topics">
-                  {{item?.name}}
-                </option>
-              </select>
-          </div>
-
-          <div class="_container">
-              <div class="row">
-                    <div class="col-md-4" *ngFor="let item of courses">
-                      <div class="card my-2">
-                          <div class="card-body p-0">
-                              <div class="preview">
-                                  <img [src]="item?.preload" alt="">
-                              </div>
-                          </div>
-                      </div>
-                    </div>
-              </div>
-          </div>
+  <div class="col-md-11 mx-auto">
+    <div class="_he">
+      <div class="sfm">
+        <input type="text" placeholder="search here">
+        <i class="fal fa-search"></i>
       </div>
+      <button><i class="fal fa-th"></i></button>
+      <select>
+        <option *ngFor="let item of topics">
+          {{item?.name}}
+        </option>
+      </select>
+    </div>
+
+    <div class="_container">
+      <div class="row">
+        <div class="col-md-4" *ngFor="let item of courses">
+          <div class="card my-2">
+            <div class="card-body p-0">
+              <div class="default">
+                <div class="preview">
+                  <img [src]="item?.preload" alt="">
+                </div>
+                <div class="title">
+                  <span class="category">{{item?.category}}</span><br>
+                  <span class="course">{{item?.name}}</span>
+                </div>
+              </div>
+
+              <div class="overlay">
+                <div class="title">
+                  <span class="category">{{item?.category}}</span><br>
+                  <span class="course">{{item?.name}}</span>
+                </div>
+                <div class="description">
+                    <span class="lesson">
+                      <i class="fal fa-file"></i>&nbsp;
+                      <a>{{item?.lesson}}</a>&nbsp;
+                      {{'Lessons'}}
+                    </span>
+                    <span class="joined">
+                      <i class="fal fa-users"></i>&nbsp;
+                      <a>{{item?.joined}}</a>&nbsp;
+                      {{'Joined'}}
+                    </span>
+                </div>
+
+                <div class="details">
+                  <p>Lorem ipsum dolor sit amet consect</p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
