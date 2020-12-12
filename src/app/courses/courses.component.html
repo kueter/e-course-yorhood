@@ -6,7 +6,7 @@
         <i class="fal fa-search"></i>
       </div>
       <button><i class="fal fa-th"></i></button>
-      <select>
+      <select [(ngModel)]="category">
         <option *ngFor="let item of topics">
          <small>{{item?.name}}</small>
         </option>
@@ -15,7 +15,7 @@
 
     <div class="_container">
       <div class="row">
-        <div class="col-md-4" *ngFor="let item of courses | paginate: { itemsPerPage: 6, currentPage: p }">
+        <div class="col-md-4" *ngFor="let item of courses | mFilter: category:  ['category'] | paginate: { itemsPerPage: 6, currentPage: p }">
           <div class="card my-2">
             <div class="card-body p-0">
               <div class="default">
