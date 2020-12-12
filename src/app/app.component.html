@@ -1,4 +1,8 @@
-<!-- Start Header -->
+
+
+<div *ngIf="boot === true">
+
+  <!-- Start Header -->
 <div class="header">
   <div class="first__h">
     <div class="__container">
@@ -208,3 +212,7 @@
     </div>
   </div>
 </div>
+
+</div>
+
+<div *ngIf="boot === false"></div>

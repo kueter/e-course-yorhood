@@ -32,6 +32,8 @@ import { Component, HostListener } from '@angular/core';
 export class AppComponent {
   title = 'yorhood';
 
+  boot = false;
+
   state = false;
   fixed = false;
 

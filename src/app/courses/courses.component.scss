@@ -14,7 +14,15 @@
       border-radius: 0.2rem;
       background-color: white;
       padding: 0.35rem 2rem;
-      color: #7f8183;
+      transition: box-shadow .2s ease-in-out;
+    }
+
+    input:focus{
+      -webkit-box-shadow: -1px 0px 17px -4px rgba(0, 0, 0, 0.23);
+      -moz-box-shadow: -1px 0px 17px -4px rgba(0, 0, 0, 0.23);
+      box-shadow: -1px 0px 17px -4px rgba(0, 0, 0, 0.23)!important;
+      background-color: #2b646f;
+      color: #fff;
     }
 
     i {
@@ -187,7 +195,7 @@
         justify-content: space-between;
         width: 100%;
         span {
-          font-size: 14px;
+          font-size: 12px;
           font-weight: 500;
         }
 
