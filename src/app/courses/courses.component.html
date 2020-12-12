@@ -54,8 +54,9 @@
                     <div class="mvk p-2">
                         <span><i class="fal fa-star" *ngFor="let it of [].constructor(item?.mark)"></i></span>
                         <span>{{'Upload: ' + item?.uptime}}</span>
-                        <button class="btn ">
+                        <button class="btn">
                           <i class="fal fa-shopping-cart"></i>
+                          &nbsp; {{item?.cost+ '$'}}
                         </button>
                       </div>
                 </div>
