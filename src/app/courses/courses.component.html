@@ -15,10 +15,12 @@
 
           <div class="_container">
               <div class="row">
-                    <div class="col-md-4" *ngFor="let item of [].constructor(6)">
+                    <div class="col-md-4" *ngFor="let item of courses">
                       <div class="card my-2">
-                          <div class="card-body">
-
+                          <div class="card-body p-0">
+                              <div class="preview">
+                                  <img [src]="item?.preload" alt="">
+                              </div>
                           </div>
                       </div>
                     </div>

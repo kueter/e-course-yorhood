@@ -8,13 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class CoursesComponent implements OnInit {
 
   topics = [
-    {name: 'test'},
-    {name: 'test'},
-    {name: 'test'}
+    {name: 'Web development'},
+    {name: 'Computer Science'},
+    {name: 'Data Science'},
+    {name: 'Engineering'},
+    {name: 'Architecture'},
+    {name: 'Art & Design'},
+    {name: 'Business Study'},
+    {name: 'Medecine'},
+
   ];
 
   courses = [
-    { name: '', instructor: '', description: '', cost: '', uptime: '', mark: '', status: '', remise: '' }
+    { name: 'Angular 9 Bootcamp 2020', instructor: 'David Beckam', description: '', cost: '250', uptime: '2020-06-03', mark: 3, status: 'Available', remise: '', preload: '../../assets/img/preload.png', category: this.topics[0].name}
   ];
 
   constructor() { }
