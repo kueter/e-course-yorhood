@@ -8,10 +8,55 @@
   }
 
   .card-footer {
+    border-top: none!important;
+    background-color: #fff;
     .fl {
-      width: 100%;
+      padding-top: .4rem;
+      width: 60%;
+      margin-right: auto;
       display: flex;
       justify-content: space-between;
+
+      span {
+        a {
+          font-size: 12px;
+        font-weight: bold;
+        color: #46957b;
+        text-decoration: none;
+        }
+      }
+    }
+
+    .sl {
+      width: 100%;
+      padding: 1rem;
+      span  a{
+          font-size: 30px;
+          font-weight: bold;
+          color: rgb(53, 50, 50);
+          text-decoration: none;
+      }
+    }
+
+    .tl {
+      width: 100%;
+      padding: 1rem;
+      span {
+        p {
+          font-size: 13px;
+          font-weight: 400;
+          color: rgb(53, 50, 50);
+        }
+      }
+    }
+
+    .qt {
+      width: 30%;
+      margin-right: auto;
+
+      button {
+        color: #46957b;
+      }
     }
   }
 }
