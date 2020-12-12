@@ -62,7 +62,7 @@ export class CoursesComponent implements OnInit {
 
 
   addCart(item: any) {
-    const distinct = this.shoppingCartItems.filter((e) => e._id === item._id);
+    const distinct = this.shoppingCartItems.filter((e) => e?.name === item?.name);
 
     if (distinct.length === 0) {
       this.service.addToCart(item);
