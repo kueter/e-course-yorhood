@@ -40,6 +40,9 @@ export class AppComponent implements OnInit {
   state = false;
   fixed = false;
 
+  constructor() {
+
+  }
 
   ngOnInit(): void {
     setTimeout(() => {
