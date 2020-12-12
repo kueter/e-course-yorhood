@@ -71,9 +71,9 @@ export class AppComponent implements OnInit {
   }
 
   clbasket() {
-    $(".basket").fadeIn()
+    $(".basket").fadeOut()
     .css({ top: 0, position: 'fixed' })
-    .animate({ height: '600px' }, 800);
+    .animate({ height: '0px' }, 800);
   }
 
 
