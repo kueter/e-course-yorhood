@@ -31,6 +31,8 @@ export class CoursesComponent implements OnInit {
 
   ];
 
+  p: number = 1;
+
   constructor() { }
 
   ngOnInit(): void {

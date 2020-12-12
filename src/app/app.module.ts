@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CoursesComponent } from './courses/courses.component';
 import { BlogComponent } from './blog/blog.component';
 import { LoadingComponent } from './loading/loading.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { LoadingComponent } from './loading/loading.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     SlickCarouselModule,
+    NgxPaginationModule,
     FormsModule,
     ReactiveFormsModule
   ],
