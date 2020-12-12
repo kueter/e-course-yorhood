@@ -22,7 +22,7 @@
 
         .detail {
           width: 70%;
-          text-align: center;
+          padding-left: 15px;
           span.title {
             font-size: 12px;
             font-weight: 700;
@@ -46,6 +46,19 @@
             left: -20%;
             border-radius: 50%;
           }
+
+          .cost {
+            font-size: 12px;
+            font-weight: 700;
+            color: #75777a;
+          }
+        }
+
+        button {
+          background-color: #2b646f;
+          color: #fff;
+          height: 35px;
+          margin-bottom: auto;
         }
       }
     }
@@ -54,6 +67,16 @@
       width: 30%;
       border-left: 2px solid #3e3f41;
       height: 100%;
+
+      ._header {
+        width: 100%;
+        
+      }
+
+      ._fbot {
+        width: 100%;
+        
+      }
     }
   }
 }
