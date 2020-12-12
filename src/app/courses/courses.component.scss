@@ -170,6 +170,32 @@
 
       }
 
+      .details {
+        margin-top: 20px;
+        width: 100%;
+        padding: 10px;
+        color: #fff;
+
+        p {
+          font-size: 12px;
+          font-weight: 300;
+        }
+      }
+      .mvk {
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        span {
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        button {
+          color: #2b646f;
+          background-color: #fff;
+        }
+      }
 
     }
   }
