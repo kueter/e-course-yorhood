@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
     }, 1500);
   }
 
-  getStmt(event) {
+  getStmt(event: any) {
     this.state = event;
     console.log(this.state);
   }
