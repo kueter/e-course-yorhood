@@ -82,7 +82,20 @@ h4.title::before {
   left: 0;
   z-index: 1;
   background: #46957b;
+}
 
+.b_ {
+  ul {
+    list-style: none;
+    li {
+      border-bottom: 1px dashed #eee;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      a {
+        color: #666;
+      }
+    }
+  }
 }
 
 .f-input {
