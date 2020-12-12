@@ -1,0 +1,20 @@
+.cart  {
+  width: 100%;
+  padding: 3rem;
+
+
+  ._container {
+    width: 100%;
+    display: flex;
+
+    ._list  {
+      width: 70%;
+
+    }
+
+    ._check {
+      width: 30%;
+      border-left: 2px solid #3e3f41;
+    }
+  }
+}
