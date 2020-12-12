@@ -1,5 +1,6 @@
 import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
 import { Component, HostListener, OnInit } from '@angular/core';
+import { AppService } from './app.service';
 
 declare var $: any;
 
@@ -40,7 +41,7 @@ export class AppComponent implements OnInit {
   state = false;
   fixed = false;
 
-  constructor() {
+  constructor(private service: AppService) {
 
   }
 
