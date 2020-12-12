@@ -242,9 +242,11 @@
 }
 
 
-.ngx-pagination .current {
-  background-color: #fff!important;
-  color: #46957b!important;
+pagination-controls  .ngx-pagination {
+  .current {
+    background-color: #fff!important;
+    color: #46957b!important;
+  }
 }
 
 
