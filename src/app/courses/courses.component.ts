@@ -13,6 +13,10 @@ export class CoursesComponent implements OnInit {
     {name: 'test'}
   ];
 
+  courses = [
+    { name: '', instructor: '', description: '', cost: '', uptime: '', mark: '', status: '', remise: '' }
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
