@@ -1,5 +1,6 @@
 import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
 import { Component, HostListener, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { AppService } from './app.service';
 
 declare var $: any;
@@ -40,15 +41,19 @@ export class AppComponent implements OnInit {
 
   state = false;
   fixed = false;
+  shoppingCartItems: any[];
+
+
 
   constructor(private service: AppService) {
-
   }
 
   ngOnInit(): void {
     setTimeout(() => {
       this.boot = true;
     }, 500);
+
+    this.service.getItems().subscribe(_ => this.shoppingCartItems = _);
   }
 
   getStmt(event: any) {
@@ -56,6 +61,13 @@ export class AppComponent implements OnInit {
     console.log(this.state);
   }
 
+  public getTotal(): Observable<number> {
+    return this.service.getTotalAmount();
+  }
+
+  public removeItem(item: any) {
+    this.service.removeFromCart(item);
+  }
 
   @HostListener('window:scroll', [])
   onScroll() {
