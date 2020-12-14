@@ -73,13 +73,24 @@
 
       ._header {
         width: 100%;
+        .title {
+          color: #fff;
+          font-size: 12px;
+        }
+
+        .total {
+          color: #eaecf0;
+          font-size: 20px;
+        }
       }
 
       ._fbot {
         width: 100%;
+        padding-top: 1rem;
         button {
           background-color: #fff;
           width: 100%;
+          color: #75777a;
         }
       }
     }
