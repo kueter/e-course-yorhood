@@ -104,5 +104,13 @@
       width: 60%;
       height: auto;
     }
+
+    .empty {
+      width: 40%;
+      span {
+        font-size: 17px;
+        font-weight: 800;
+      }
+    }
   }
 }
