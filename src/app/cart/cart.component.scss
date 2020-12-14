@@ -99,18 +99,20 @@
 
   ._container-empty {
     width: 100%;
-
+    position: relative;
     img {
       width: 60%;
       height: auto;
+      margin-left: 10rem;
     }
 
-    .empty {
-      width: 40%;
-      span {
-        font-size: 17px;
+    span {
+        font-size: 27px;
         font-weight: 800;
-      }
+        color: rgb(100, 96, 96);
+        position: absolute;
+        top: 60%;
+        left: 45%;
     }
   }
 }
