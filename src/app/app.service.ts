@@ -20,7 +20,7 @@ export class AppService {
 
   public removeFromCart(item: any) {
     const currentItems = [...this.itemsInCart];
-    const itemsWithoutRemoved = currentItems.filter(_ => _.id !== item.id);
+    const itemsWithoutRemoved = currentItems.filter(_ => _.name !== item.name);
     this.itemsInCartSubject.next(itemsWithoutRemoved);
   }
 

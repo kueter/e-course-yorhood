@@ -13,7 +13,7 @@
           <div class="_list">
             <div class="row">
               <div class="col-md-12" *ngFor="let item of shoppingCartItems; let i =index">
-                <div class="card">
+                <div class="card my-1">
                   <div class="card-body p-1">
                     <div class="_ctn">
                       <div class="row">
@@ -29,7 +29,7 @@
                         </div>
                         <div class="col-md-2">
                           <span class="cost">{{item?.cost +'$'}}</span><br>
-                          <button class="btn"><i class="fal fa-trash"></i></button>
+                          <button class="btn" (click)="remove(item)"><i class="fal fa-trash"></i></button>
                         </div>
                       </div>
                     </div>
@@ -54,7 +54,7 @@
       </div>
 
       <div *ngIf="shoppingCartItems?.length === 0" class="_container-empty">
-
+        <img src="../../assets/img/notfound.png">
       </div>
 
     </div>

@@ -21,4 +21,9 @@ export class CartComponent implements OnInit {
     this.service.getTotalAmount().subscribe(_ => this.total = _);
   }
 
+
+  remove(item: any) {
+      this.service.removeFromCart(item);
+  }
+
 }
